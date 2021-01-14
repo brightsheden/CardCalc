@@ -1,0 +1,45 @@
+{% extends 'age/base.html' %}
+
+{% block contents %}
+    <!--form class="form-group ml-2" method="POST" action="age">
+    {% csrf_token %}
+<h2> KNOW YOUR AGE</h2>
+    Year<input type="text" placeholder="Enter Your Year Of Birth" name='odun'></br>
+    <button type="submit">Submit</button>
+    </form-->
+
+    {% block content %}
+    <form class="form-group ml-2" method="POST" action="age">
+    {% csrf_token %}
+<h2> MtnCard</h2>
+    MTN 500<input type="text" placeholder="Enter Mtn 500" name='Mtn_500'></br>
+    MTN200<input type="text" placeholder="Enter Mtn 200" name='Mtn_200'></br>
+    MTN100<input type="text" placeholder="Enter Mtn 100" name='Mtn_100'></br>
+    <button type="submit">Submit</button>
+    </form>
+    
+    <form class="form-group ml-2" method="POST" action="age">
+    {% csrf_token %}
+<h2> GloCard </h2>
+    GLO 500<input type="text" placeholder="Enter Glo 500" name='Glo_500'></br>
+    GLO 200<input type="text" placeholder="Enter Glo 200" name='Glo_200'></br>
+    GLO 100<input type="text" placeholder="Enter Glo 100" name='Glo_100'></br>
+    <button type="submit">Submit</button>
+    </form>
+
+    <form class="form-group ml-2" method="POST" action="age">
+    {% csrf_token %}
+<h2> AirtelCard </h2>
+    Airtel 500<input type="text" placeholder="Enter Airtel  500" name='Airtel_500'></br>
+    Airtel 200<input type="text" placeholder="Enter Airtel 200" name='Airtel_200'></br>
+    Airtel 100<input type="text" placeholder="Enter Airtel 100" name='Airtel_100'></br>
+    <button type="submit">Submit</button>
+    </form>
+    <h3>{{result}}</h3>
+{% endblock %}
+</body>
+</html>
+
+{% endblock contents %}
+</body>
+</html>

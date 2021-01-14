@@ -1,0 +1,17 @@
+
+<!--script language= "JavaScript">
+alert("You are {{result}} years old")</script-->
+{% block contents%}
+<div class='content'>
+<h2 class='class2'>Mtn TOTAL BALANCE: {{result}} 
+</h2>
+<h2>GLO TOTAL BALANCE: {{res}}
+
+<h2>AIRTEL BALANCE: {{Airtel}}</h2>
+</div>
+{% if messages %}
+{% for message in messages %}
+<p class="text-muted">{{message}}</p>
+{% endfor %}
+{% endif %}
+{% endblock contents %}
